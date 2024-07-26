@@ -1,8 +1,10 @@
-<button (click)="sendRequest()">Test requestion</button>
-@if (isLoading) {
-  <div>Loading...</div>
-}
-@else {
-  <div>{{ result }}</div>
-}
+<div class="pt-100px">
+  <button (click)="sendRequest()">Test requestion</button>
+  @if (isLoading) {
+    <div>Loading...</div>
+  }
+  @else {
+    <div>{{ result }}</div>
+  }
+</div>
 <router-outlet />
